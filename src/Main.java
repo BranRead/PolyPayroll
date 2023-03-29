@@ -13,7 +13,7 @@ public class Main {
         for (Employee emp : polyEmployees) {
             System.out.println("Name: " + emp.getFirstName() + " " + emp.getLastName());
             System.out.println("\tPay Type: " + emp.getClass().getSimpleName());
-            System.out.println("\tMonthly Pay: $" + emp.calculateMonthlyPay() + "\n");
+            System.out.println("\tMonthly Pay: $" + MoneyFormat.doubleToMoney(emp.calculateMonthlyPay()) + "\n");
         }
     }
 }
